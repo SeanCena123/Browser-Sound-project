@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<title> Sound Project </title>
+
+</head>
+<body id="wrapper" class="bg-light" style="margin: 10px;">
+
+<div> 
+<nav class="navbar fixed-top navbar-light bg-dark">
+  <a class="navbar-brand" href="#" style="color: white; max-width: 50px">Sound Project</a>
+</nav> <br><br> <br>    
+<p> Rain </p>
+<button type="button" onclick="PlaySound(0)" class="btn btn-primary">Play</button>
+<button type="button" onclick="period(0)" class="btn btn-primary">Duration</button>
+<button type="button" onclick="pause(0)" class="btn btn-primary">Pause</button> 
+
+<div class="slidecontainer">
+  <input id="slidecontainer0" type="range" min="1" max="100" value="25" class="slider" id="myRange" onmousedown="mousedown(0);" onmouseup="mouseup(0);">
+</div>
+
+<br> <br>
+
+<p> Train </p>
+
+<button type="button" onclick="PlaySound(1)" class="btn btn-primary">Play</button>
+<button type="button" onclick="period(1)" class="btn btn-primary">Duration</button>
+<button type="button" onclick="pause(1)" class="btn btn-primary">Pause</button>
+<div class="slidecontainer">
+  <input id="slidecontainer1" type="range" min="1" max="100" value="25" class="slider" id="myRange" onmousedown="mousedown(1);" onmouseup="mouseup(1);">
+</div>
+
+
+<script type="text/javascript" src="js/load.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+<script data-ad-client="ca-pub-5353680302785596" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script src="data.js"> </script>
+</body>
+</html>

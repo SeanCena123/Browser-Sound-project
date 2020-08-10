@@ -1,0 +1,10 @@
+<iframe src="file:///Users/6430/Desktop/Sound/index.html" name="myFrame" width="350px" height="650px"></iframe>
+
+    <script src="background.js"></script>
+<script>
+const iframe  = document.querySelector("iframe");
+const oldNode = iframe.contentWindow.document.getElementById("myNode");
+const newNode = document.importNode(oldNode, true);
+document.getElementById("container").appendChild(newNode);
+chrome.tabs.update(tab.id, {url:'javascript:void window.stop();'})
+</script>
